@@ -105,7 +105,7 @@ main {
 }
 
 span {
-  color: rgb(255, 166, 0);
+  color: #c2410c;
   font-weight: bold; /* Opcional: para resaltar más */
 }
 
@@ -151,14 +151,9 @@ span {
   align-items: center;
   gap: 10px;
   width: 20rem;
-}
-
-.cta-button a {
-  color: #fff;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  min-height: 44px;
+  justify-content: center;
 }
 
 /*COMODIDADES*/
@@ -338,29 +333,52 @@ span {
   padding: 12px 16px 18px;
 }
 
-.redes-sociales #instagram,
-.redes-sociales #facebook,
-.redes-sociales #whatsapp {
+.redes-sociales .social-button {
   width: 100%;
-  padding: 10px 0;
+  padding: 12px 0;
   border: none;
   border-radius: 999px;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
 }
 
-.redes-sociales #instagram {
+.redes-sociales .instagram {
   background: linear-gradient(45deg, #f9ce34 0%, #ee2a7b 40%, #6228d7 100%);
 }
 
-.redes-sociales #facebook {
+.redes-sociales .facebook {
   background: linear-gradient(45deg, #385185 0%, #9ca3af 100%);
 }
 
-.redes-sociales #whatsapp {
+.redes-sociales .whatsapp {
   background: linear-gradient(45deg, #25D366 0%, #128C7E 100%);
+}
+
+.menu-toggle {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+nav a,
+.cta-button,
+.redes-sociales .social-button,
+.menu-toggle {
+  outline: none;
+}
+
+nav a:focus-visible,
+.cta-button:focus-visible,
+.redes-sociales .social-button:focus-visible,
+.menu-toggle:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
 }
 
 /*FOOTER*/
