@@ -57,6 +57,11 @@ main {
   position: relative;
 }
 
+#NuestrasComodidades {
+  content-visibility: auto;
+  contain-intrinsic-size: 700px 900px;
+}
+
 .portada {
   position: relative;
   z-index: 1;
@@ -216,6 +221,8 @@ span {
   column-gap: 32px;
   align-items: start;
   margin-top: 48px;
+  content-visibility: auto;
+  contain-intrinsic-size: 800px 900px;
 }
 
 .logo {
@@ -280,6 +287,8 @@ span {
 #NuestrasSucursales {
   background-color: #111827;
   padding: 40px 0 60px;
+  content-visibility: auto;
+  contain-intrinsic-size: 900px 900px;
 }
 
 #NuestrasSucursales p {
@@ -387,6 +396,8 @@ nav a:focus-visible,
   background: #050505;
   color: #c7c7c7;
   padding: 48px 0 24px;
+  content-visibility: auto;
+  contain-intrinsic-size: 420px 700px;
 }
 
 .footer-container {
